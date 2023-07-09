@@ -8,7 +8,9 @@ public class CustomerCareSwitch
         System.out.println("Press 1 for English");
         System.out.println("Press 2 for French");
         int input = scanner.nextInt();
-       int num;
+        int num;
+        int customer;
+        int  phone;
 
         switch(input)
         {
@@ -22,15 +24,33 @@ public class CustomerCareSwitch
                 {
                     case 1 :
                  System.out.println("welcome to mobile department");
-                 System.out.println("Enter your mobile number");
-                       int  phone = scanner.nextInt();
-                        System.out.println(phone);
-                        break;
-                    case 2:
+                 System.out.println("Press 1 for New Customer ");
+                 System.out.println("Press 2 for Existing Customer ");
+
+                 customer = scanner.nextInt();
+                 switch(customer)
+                 {
+                            case 1 :
+                                System.out.println("New Customer");
+                                System.out.println("Please wait transferring your call to agent");
+                                break;
+                            case 2:
+                                System.out.println("Existing Customer");
+                                System.out.println("Enter your mobile number");
+                                phone = scanner.nextInt();
+                                System.out.println(phone);
+                                System.out.println("Transferring your call to agent");
+                                break;
+                            default :
+                                System.out.println("Choose right option");
+                                break;
+                 }
+                 break;
+                 case 2:
                         System.out.println("welcome to internet Department");
                         System.out.println("Press 1 for New Customer ");
                         System.out.println("Press 2 for Existing Customer ");
-                        int customer = scanner.nextInt();
+                        customer = scanner.nextInt();
                         switch(customer)
                         {
                             case 1 :
@@ -61,32 +81,52 @@ public class CustomerCareSwitch
                 {
                     case 1 :
                         System.out.println("welcome to mobile department");
-                        System.out.println("Enter your mobile number");
-                        int  phone1 = scanner.nextInt();
-                        System.out.println(phone1);
+                        System.out.println("Press 1 for New Customer ");
+                        System.out.println("Press 2 for Existing Customer ");
+
+                        customer = scanner.nextInt();
+                        switch(customer)
+                        {
+                            case 1 :
+                                System.out.println("New Customer");
+                                System.out.println("Please wait transferring your call to agent");
+                                break;
+                            case 2:
+                                System.out.println("Existing Customer");
+                                System.out.println("Enter your mobile number");
+                                phone = scanner.nextInt();
+                                System.out.println(phone);
+                                System.out.println("Transferring your call to agent");
+                                break;
+                            default :
+                                System.out.println("Choose right option");
+                                break;
+                        }
                         break;
                     case 2:
                         System.out.println("welcome to internet Department");
                         System.out.println("Press 1 for New Customer ");
                         System.out.println("Press 2 for Existing Customer ");
-                        int customer1 = scanner.nextInt();
-                        switch(customer1)
+                        customer = scanner.nextInt();
+                        switch(customer)
                         {
                             case 1 :
                                 System.out.println("New Customer");
                                 break;
                             case 2:
                                 System.out.println("Existing Customer");
+                                System.out.println("Enter your mobile number");
+                                phone = scanner.nextInt();
+                                System.out.println(phone);
+                                System.out.println("Transferring your call to agent");
                                 break;
                             default :
                                 System.out.println("Choose right option");
                                 break;
-
                         }
                         break;
                     default :
                         System.out.println("Choose right option");
-
                 }
                 break;
 

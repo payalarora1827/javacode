@@ -1,18 +1,15 @@
 package july8.loops;
 import java.util.Scanner;
-public class NaturalNumWhileLoop {
+public class NaturalNumForLoop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number ");
         int num = scanner.nextInt();
-        int i=1;
         int sum = 0;
-        while(i <= num)
+        for(int i=1;i<=10;i++)
         {
             sum = sum +i;
-            i++;
         }
         System.out.println("Sum of "+num+" numbers is :"+sum);
-
     }
 }
