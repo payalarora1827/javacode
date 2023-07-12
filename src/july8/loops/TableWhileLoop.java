@@ -1,6 +1,6 @@
 package july8.loops;
 import java.util.Scanner;
-public class Table {
+public class TableWhileLoop {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the input");
