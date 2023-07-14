@@ -1,0 +1,22 @@
+package july8.loops;
+import java.util.Scanner;
+public class AverageNumberDoWhileLoop {
+    public static void main(String[] args)
+    {
+        System.out.println("Input the 5 numbers : ");
+        int number = 0;
+        int sum=0;
+        int avg;
+        int i=0;
+        do {
+            Scanner scanner = new Scanner(System.in);
+            number = scanner.nextInt();
+            //System.out.println("Value Input is  "+number);
+            i++;
+            sum = sum + number;
+        }while(i<5);
+        avg = sum/5;
+        System.out.println("The sum of 5 input no is : " +sum+"\nThe Average is : " +avg);
+    }
+
+}

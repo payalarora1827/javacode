@@ -59,8 +59,6 @@ public class CalculatorSwitchCase {
             default :
                 System.err.println("Wrong Input");
                 break;
-
-
         }
         }
     }
